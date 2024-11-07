@@ -1,0 +1,88 @@
+/* Styling for Main */
+main {
+    background-color: var(--pico-background-color);
+    padding: 20px;
+    max-width: 1200px;
+    color: var(--pico-color);
+    /* Top and bottom border for UI separation */
+    border-top: 1px solid var(--pico-border-color, rgba(255,255,255,0.2));
+    border-bottom: 1px solid var(--pico-border-color, rgba(255,255,255,0.2));
+}
+
+/* Styling for Header */
+header {
+    background-color: var(--pico-background-color);
+    padding: 20px 15px;
+    margin-bottom: 20px;
+}
+  
+header h1 {
+    color: var(--pico-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    /* font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px;
+    /* Text shadow for embossed effect */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: var(--pico-primary);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    /* A slight lift effect on hover for nav items */
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    /* Change color on hover, using Pico CSS hover color if available */
+    color: var(--pico-primary-hover);
+    /* Add underline on hover */
+    text-decoration: underline;
+}
+
+header nav ul li a.active {
+    color: var(--pico-contrast) !important; /* Override color on hover */
+    text-shadow: #015887;
+}
+
+/* Styling Footer */
+footer {
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--pico-primary);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+footer a:hover {
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(255,255,255,0.2);
+    color: var(--pico-primary-hover, #015887);
+}
+
+.footer-text p {
+    margin: 10px 0 0;
+    color: var(--pico-contrast);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
